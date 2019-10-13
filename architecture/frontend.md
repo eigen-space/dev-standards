@@ -10,9 +10,23 @@ Logic and data processing. Usually supported by developers.
 
 #### 1.1.1. Provider
 
-Main question: 1. What business data does component operate with? 2. What business logic does component implement?
+Main question: ****
 
-Responsible for: 1. Getting and preparing data from store 2. Preparing actions 3. Implementation of business logic
+1. What business data does component operate with? 
+
+2. What business logic does component implement?
+
+
+
+Responsible for: 
+
+1. Getting and preparing data from store 
+
+2. Preparing actions 
+
+3. Implementation of business logic
+
+
 
 Filename: `<component>.provider.tsx`
 
