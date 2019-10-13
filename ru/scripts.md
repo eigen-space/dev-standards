@@ -1,4 +1,4 @@
-# Scripts \(TypeScript / JavaScript\)
+# Скрипты \(TypeScript / JavaScript\)
 
 ## 0. Введение
 

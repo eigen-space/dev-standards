@@ -1,4 +1,4 @@
-# Templates \(Html\)
+# Templates
 
 ## 0. Введение
 
