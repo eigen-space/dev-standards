@@ -119,7 +119,7 @@ export const ButtonRoot = styled.button.attrs<Props>(attrs)<Props>`
 
 \`\`\`typescript jsx // Плохо
 
- {this.props.children} { hasContent && {this.props.title &&{this.props.title}} {this.props.subtitle &&{this.props.subtitle}}{this.props.description} {this.props.icon &&{this.props.icon}} }
+{this.props.children} { hasContent && {this.props.title &&{this.props.title}} {this.props.subtitle &&{this.props.subtitle}}{this.props.description} {this.props.icon &&{this.props.icon}} }
 
 ```text
 // Хорошо
@@ -194,7 +194,7 @@ a. Не выносить список в отдельную функцию ил�
 
 b. Не делать дополнительных переносов внутри фигурных скобок для фрагмента, где выводятся вложенные компоненты.
 
-\`\`\`typescript jsx // Плохо  { this.props.items.map\(item =&gt; \( \)\) }
+\`\`\`typescript jsx // Плохо { this.props.items.map\(item =&gt; \( \)\) }
 
 ```text
 // Хорошо
