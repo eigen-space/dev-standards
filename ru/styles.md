@@ -1,3 +1,7 @@
+---
+description: 'CSS, SASS'
+---
+
 # Стили
 
 В качестве методологии написания стилей используется [БЭМ](https://ru.bem.info/methodology/quick-start/).

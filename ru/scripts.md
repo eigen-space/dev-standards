@@ -1,4 +1,8 @@
-# Скрипты \(TypeScript / JavaScript\)
+---
+description: 'TypeScript, JavaScript'
+---
+
+# Скрипты
 
 ## 0. Введение
 
