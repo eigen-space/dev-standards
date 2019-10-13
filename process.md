@@ -1,3 +1,7 @@
+---
+description: 'Commits, reviews, changelogs'
+---
+
 # Process
 
 ## 1. Система контроля версий

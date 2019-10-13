@@ -4,12 +4,6 @@ description: 'TypeScript, JavaScript'
 
 # Scripts
 
-{% hint style="info" %}
-## Work in progress
-
-We are translating this document from russian to english and some sections are not ready yet. Please, go [here](ru/scripts.md) to get full description in russian language. If you want to help us, please create pull request with translated sections. You can find our rules about working with git [here](process.md#1---).
-{% endhint %}
-
 ## 0. Introduction
 
 ### 0.1. Terms and definitions

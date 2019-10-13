@@ -1,3 +1,7 @@
+---
+description: 'Project structure, file names, etc.'
+---
+
 # Common
 
 ## 1. Файлы с исходным кодом

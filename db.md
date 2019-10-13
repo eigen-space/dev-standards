@@ -1,3 +1,7 @@
+---
+description: 'Queries, tables, etc.'
+---
+
 # Database
 
 ## 0. Введение
