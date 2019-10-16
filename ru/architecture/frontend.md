@@ -2,7 +2,9 @@
 
 ## 1. Компонент
 
-В наших проектах мы следуем следующей архитектуре: ![Architecture](../../assets/architecture-frontend/architecture.png)
+В наших проектах мы следуем следующей архитектуре: 
+
+![Architecture](../../.gitbook/assets/architecture%20%281%29.png)
 
 ### 1.1. Слой компонентной логики
 
