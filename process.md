@@ -437,7 +437,7 @@ b. \[?\] Должно учитываться время, которое необ
 
 a. The iteration of development process is an one iteration of the loop of setting sub-goals, product production, getting result and feedback to correct quality of the result including productivity as toughly coupled part of the result.
 
-![Iteration mechanism](https://github.com/eigen-space/dev-standards/tree/191cf87781a2d77964a0afe986f482470d04cab9/.gitbook/assets/iteration-mechanism.jpg)
+![Iteration mechanism](./assets/process/iteration-mechanism.jpg)
 
 b. The iteration process is comprised of the following parts:
 
@@ -454,7 +454,7 @@ b. The iteration process is comprised of the following parts:
 * Quiet time
 * Brainshaking
 
-![Iteration process](https://github.com/eigen-space/dev-standards/tree/191cf87781a2d77964a0afe986f482470d04cab9/.gitbook/assets/iteration-process.jpg)
+![Iteration process](./assets/process/iteration-process.jpg)
 
 c. Total time for events: 9h
 

@@ -2,7 +2,7 @@
 
 ## 1. Компонент
 
-В наших проектах мы следуем следующей архитектуре: ![Architecture](https://github.com/eigen-space/dev-standards/tree/191cf87781a2d77964a0afe986f482470d04cab9/ru/.gitbook/assets/architecture.png)
+В наших проектах мы следуем следующей архитектуре: ![Architecture](../../assets/architecture-frontend/architecture.png)
 
 ### 1.1. Слой компонентной логики
 

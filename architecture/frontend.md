@@ -2,7 +2,7 @@
 
 ## 1. Component
 
-In our projects we follow this architecture: ![Architecture](https://github.com/eigen-space/dev-standards/tree/191cf87781a2d77964a0afe986f482470d04cab9/architecture/.gitbook/assets/architecture%20%281%29.png)
+In our projects we follow this architecture: ![Architecture](../assets/architecture-frontend/architecture.png)
 
 ### 1.1. Component Logic layer
 
