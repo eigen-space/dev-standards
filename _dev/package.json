@@ -1,0 +1,16 @@
+{
+    "name": "extract-rules-info",
+    "version": "0.0.1",
+    "description": "Helper script to upload status about rules automatization status to Google Sheets",
+    "license": "MIT",
+    "scripts": {
+        "start": "ts-node ./extract-rules-info/extract-rules-meta-info-to-google-sheets.ts"
+    },
+    "devDependencies": {
+        "@eigenspace/helper-scripts": "^2.0.1",
+        "@types/node": "12.11.1",
+        "google-spreadsheet": "2.0.8",
+        "ts-node": "8.4.1",
+        "typescript": "3.6.4"
+    }
+}
