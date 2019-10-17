@@ -2,7 +2,9 @@
 
 ## 1. Component
 
-In our projects we follow this architecture: ![Architecture](../assets/architecture-frontend/architecture.png)
+In our projects we follow this architecture: 
+
+![Architecture](../.gitbook/assets/architecture.png)
 
 ### 1.1. Component Logic layer
 
@@ -10,23 +12,16 @@ Logic and data processing. Usually supported by developers.
 
 #### 1.1.1. Provider
 
-Main question: ****
+Main question: _\*\*_
 
-1. What business data does component operate with? 
-
+1. What business data does component operate with?
 2. What business logic does component implement?
 
+Responsible for:
 
-
-Responsible for: 
-
-1. Getting and preparing data from store 
-
-2. Preparing actions 
-
+1. Getting and preparing data from store
+2. Preparing actions
 3. Implementation of business logic
-
-
 
 Filename: `<component>.provider.tsx`
 
