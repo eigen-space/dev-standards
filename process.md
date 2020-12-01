@@ -4,37 +4,38 @@ description: 'Commits, reviews, changelogs'
 
 # Process
 
-## 1. Система контроля версий
+## 1. Version control system
 
-### 1.1. Правила именования
+### 1.1. Naming convention
 
-#### 1.1.1. Ветка
+#### 1.1.1. Branch
 
-Необходимо придерживаться следующего формата именования веток:
+You should use the following name for a branch:
 
-`<тип задачи>/<номер задачи>-<краткое описание>`,
+`<task type>/<task number>-<short description>`,
 
-где
+where
 
-* тип задачи - новый функционал \(feature\), дефект \(bug\), предложение \(proposal\);
-* номер задачи - номер задачи в системе учёта задач \(gitlab\), например 107.
+* task type - feature, bug, proposal;
+* task number - the number of the task in an issue tracker like Jira or in a gitlab/github project
+  For example, 107, MP-224 (but in lower case: mp-224). There is no this part for the proposal;
+* short description - the summary \(name\) of the task. It is allowed to use more shorten version of
+  the task summary. You should use only English here, transliteration is prohibited.
 
-  Отсутствует для предложения \(proposal\);
-
-* краткое описание - название задачи \(допустим более краткий вариант\) или краткое описание
-
-  предложения \(proposal\) на английском языке \(не транслитом\) в kebab-case.
+Kebab-case is used for all the parts of the branch name including the task number.
 
 ```text
-// Плохо
+// Bad
 issue-241-dictionary-infobar-route-stops
 feature/241
 bug/301
+feature/MP-224-onboarding-screen
 
-// Хорошо
+// Good
 feature/241-dictionary-infobar-route-stops
 bug/301-broken-infobar-dropdown
 proposal/new-branch-type-for-proposals
+feature/mp-224-onboarding-screen
 ```
 
 #### 1.1.2. \[Automated: commit-linter\] Сообщение к изменению
