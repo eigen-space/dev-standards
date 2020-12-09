@@ -18,8 +18,11 @@ where
 
 * task type - feature, bug, proposal;
 * task number - the number of the task in an issue tracker like Jira or in a gitlab/github project
-  For example, 107, MP-224 (but in lower case: mp-224). There is no this part for the proposal;
+
+  For example, 107, MP-224 \(but in lower case: mp-224\). There is no this part for the proposal;
+
 * short description - the summary \(name\) of the task. It is allowed to use more shorten version of
+
   the task summary. You should use only English here, transliteration is prohibited.
 
 Kebab-case is used for all the parts of the branch name including the task number.

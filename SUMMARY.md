@@ -24,4 +24,5 @@
   * [React](ru/react.md)
   * [Зависимости](ru/dependencies.md)
   * [Angular](ru/angular.md)
+* [PlantUML](plantuml.md)
 
