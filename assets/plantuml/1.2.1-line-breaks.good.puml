@@ -1,0 +1,8 @@
+@startuml
+
+DeduplicationWorker -> Xero: \n \
+    1. invoice number \n \
+    2. PO number \n \
+    3. total sum
+
+@enduml

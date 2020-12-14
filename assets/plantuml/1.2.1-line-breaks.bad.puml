@@ -1,0 +1,8 @@
+@startuml
+
+DeduplicationWorker -> Xero:\
+1. invoice number\
+2. \nPO number\
+3. \ndate
+
+@enduml
