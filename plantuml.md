@@ -6,6 +6,9 @@ description: Tool for drawing UML-diagrams
 
 ## 0. Introduction
 
+// TODO: Move to common section
+// TODO: Add why we exactly use PlanUML and not Draw.io, for instance
+
 The main goal is to reduce cognitive load, create common expectations, 
 increase the readability of diagrams from both sides: code and appearance.
 
@@ -54,6 +57,12 @@ The reason we do it is to be able to reuse this entity in other diagrams using i
 1.2.1. Each diagram contains the title represented what the diagram really 
 is or its reference to the business process.
 
+// TODO: We should add that diagrams should not contain titles.
+    TODO: Title is already part of the filename
+    TODO: Search will work
+
+// TODO: Add file about filename
+
 ```text
 title UC. 06 Deduplication
 ```
@@ -101,8 +110,8 @@ the new-line character and the line break.
 
 d. If you need to use a line break, you should indent the following lines.
 
-e. Each line that has a line break aslo has a new-line character. They always
-go together. It makes formatting consistent both in the pluntuml code and on
+e. Each line that has a line break also has a new-line character. They always
+go together. It makes formatting consistent both in the PlantUml code and on
 the rendered diagram. If we do not `\n` for the first line, the default 
 visualization tool draw the first line without the left indent.  
 
@@ -132,7 +141,7 @@ DeduplicationWorker -> Xero: \n \
 
 1.3.4. Opening and closing a diagram
 
-a. There is an emply line after the opening tag and before the closing tag.
+a. There is an empty line after the opening tag and before the closing tag.
 
 b. There is no indentation of the content between both tags.
 
@@ -165,6 +174,8 @@ DeduplicationWorker -> Xero: /invoice/:id
 1.4.1. With the diagram, the image is also attached. Thus, it will 
 be easier to preview them during the review.
 
+Note: We can try to automate it generating images on precommit hook.
+
 ## 2. Activity diagram
 
 ### 2.1. Type
@@ -172,9 +183,12 @@ be easier to preview them during the review.
 2.1.1. New version of the activity style is used. It looks more 
 beautiful and readable.
 
+// TODO: Add images for examples
+
 ```text
 // Bad
 @startuml
+
 (*) --> "check input"
 If "input is verbose" then
     --> [Yes] "turn on verbosity"
@@ -183,11 +197,14 @@ else
     --> "run command"
 Endif
 -->(*)
+
 @enduml
 ```
 
 ```text
 // Good
+@startuml
+
 start
     - Go to Xero
 
@@ -197,13 +214,15 @@ start
         - Invoice will be exported to Xero
     endif
 stop
+
+@enduml
 ```
 
 ## 3. Class diagram
 
 ### 3.1. Common
 
-3.1.1. The diagram contains not more than 8-10 components.
+3.1.1. The diagram contains not more than 8 components.
 
 3.1.2. If the class diagram contains other classes
 those classes should be imported using the `!include` directive.
@@ -271,6 +290,8 @@ class SupplierForm {
 3.2.1. A method signature should contain the method name, arguments with types
 and return type.
 
+// TODO: Add rule about avoiding using of semi-colons
+
 ```text
 // Bad
 class RossumAppService {
@@ -299,6 +320,11 @@ type of the class:
 | S | Service | \#fdcb6e |
 | D | Dom element | \#fcba03 |
 
+// TODO: <<interface>> | <<React component>>
+// TODO: Try to use stereotype instead of this feature:
+    - Stereotypes is more standards feature
+    - It's more clear and represenative
+
 ## 4. Sequence diagram
 
 ### 4.1. Common
@@ -316,3 +342,13 @@ Each diagram should cover a specific use case.
 4.2.1. Message should contain a concrete API method or a concrete
 return type.
 
+// TODO: Add rule about shared elements
+
+## 5. TODO
+
+// TODO: Each project should contain styles declaration
+// TODO: Add as a part of codestyle
+// TODO: It's not just a painting of 5 year girl, it's a representation of
+real code behavior.
+// TODO: Add rule about references to another diagrams
+// TODO: Restrictions: use case, component, sequence, class and deployment
