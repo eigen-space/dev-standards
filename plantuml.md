@@ -112,7 +112,7 @@ the condition operator `if` in the code (2.5.1.c)](scripts.md#251-------).
 
 a. Line breaks go after the line content. 
 
-b. A new line character is on the same line. It is between content of the line
+b. A new line character is on the same line. It is between the content of the line
 and a line break.
 
 c. There is a space between all the parts of the line: the content, 
@@ -123,7 +123,7 @@ d. If you need to use a line break, you should indent the following lines.
 e. Each line that has a line break also has a new-line character. They always
 go together. It makes formatting consistent both in the PlantUml code and on
 the rendered diagram. If we do not `\n` for the first line, the default 
-visualization tool draw the first line without the left indent.  
+visualization tool draws the first line without the left indent.  
 
 ```text
 // Bad
@@ -158,9 +158,9 @@ b. There is no indentation of the content between both tags.
 The reason to have an empty line before opening and closing tags
 is to split logical groups. It raises from our common script rules.
 
-The reason to avoid additional left indent and just add empty lines
-is to have more space in horizontal direction due to the limit
-of the line we specify in this standard.
+The reason to avoid an additional left indent and just add empty lines
+is to have more space in the horizontal direction due to the limit
+of the line, we specify in this standard.
 
 ```text
 // Bad
@@ -188,7 +188,7 @@ DeduplicationWorker -> Xero: /invoice/:id
 1.4.1. With the diagram, the image is also attached. Thus, it will 
 be easier to preview them during the review.
 
-Note: We can try to automate it generating images on precommit hook.
+Note: We can try to automate it generating images on pre-commit hook.
 
 ## 2. Activity diagram
 
@@ -316,7 +316,7 @@ class SupplierForm {
 3.2.1. A method signature should contain the method name, arguments with types
 and return type.
 
-// TODO: Add rule about avoiding using of semi-colons
+// TODO: Add rule about avoiding using semi-colons
 
 ```text
 // Bad
@@ -373,8 +373,8 @@ return type.
 ## 5. TODO
 
 // TODO: Each project should contain styles declaration
-// TODO: Add as a part of codestyle
-// TODO: It's not just a painting of 5 year girl, it's a representation of
-real code behavior.
-// TODO: Add rule about references to another diagrams
+// TODO: Add as a part of code style
+// TODO: It's not just a painting of 5-year girl, it's a representation of
+real code behaviour.
+// TODO: Add rule about references to other diagrams
 // TODO: Restrictions: use case, component, sequence, class and deployment
