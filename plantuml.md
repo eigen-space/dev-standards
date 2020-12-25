@@ -6,11 +6,15 @@ description: Tool for drawing UML-diagrams
 
 ## 0. Introduction
 
-// TODO: Move to common section
-// TODO: Add why we exactly use PlanUML and not Draw.io, for instance
+We use PlantUML instead of some free-drawing UI tool like Lycidchart,
+Draw.io or Miro due to the following reasons:
 
-The main goal is to reduce cognitive load, create common expectations, 
-increase the readability of diagrams from both sides: code and appearance.
+* we can easily control versions and changes of the artefacts;
+* we can reuse common entities across diagrams;
+* it is easier to draw sequence diagrams as a code instead of 
+drawing them in UI;
+* and the most important, we make our diagrams closer to the code
+preparing us to the following step when we transform one to another.
 
 ## 1. Common
 

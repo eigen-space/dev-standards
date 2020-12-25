@@ -4,6 +4,11 @@ description: 'Project structure, file names, etc.'
 
 # Common
 
+## 0. Introduction
+
+The main goal is to reduce cognitive load, create common expectations, 
+increase the readability of code, commits, diagrams or something else.
+
 ## 1. Файлы с исходным кодом
 
 ### 1.1. Правила именования
@@ -62,7 +67,9 @@ description: 'Project structure, file names, etc.'
     const currency = '\u20bd';
     // Плохо
     result = '\ufeff' + 'content';
+```
 
+```typescript
     // Хорошо
     const currency = '₽';
     // Хорошо
