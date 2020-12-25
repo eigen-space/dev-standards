@@ -1,0 +1,7 @@
+@startuml
+
+class "SupplierForm" as SupplierForm {
+    + {method} onSubmit(values: Supplier): void
+}
+
+@enduml

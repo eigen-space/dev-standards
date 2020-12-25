@@ -1,0 +1,13 @@
+@startuml
+
+!include 3.1.2-import-classes.index.puml
+!include 3.1.2-import-classes.form.index.puml
+
+class SupplierForm {
+    - {method} onSubmitted?: (values: AnyDictionary) => void
+    - {method} onResetted?: (values: AnyDictionary) => void
+}
+
+SupplierForm *-- "1" Form
+
+@enduml

@@ -1,0 +1,13 @@
+@startuml
+
+start
+    - Go to Xero
+
+    if (really duplicated?) then (yes)
+        - Find an email
+    else (no)
+        - Invoice will be exported to Xero
+    endif
+stop
+
+@enduml

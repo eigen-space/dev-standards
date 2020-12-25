@@ -1,0 +1,7 @@
+@startuml
+
+class "Form" as Form {
+    + {method} onSubmit(values: string[]): void
+}
+
+@enduml

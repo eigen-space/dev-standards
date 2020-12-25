@@ -71,7 +71,7 @@ is or its reference to the business process.
 title UC. 06 Deduplication
 ```
 
-![Example](assets/plantuml/1.1.1-the-diagram-title.png)
+![Example](assets/plantuml/1.2.1-the-diagram-title.png)
 
 1.2.2. Each diagram must define a name for a component using the `as` command.
 It brings usability of refactoring the name of a component
@@ -84,7 +84,11 @@ without changing the name in all components where the diagram imported in.
 class SupplierForm {}
 
 @enduml
+```
 
+![Bad example](assets/plantuml/1.2.2-alias-for-an-entity.bad.png)
+
+```text
 // Good
 @startuml
 
@@ -92,6 +96,8 @@ class "SupplierForm" as SupplierForm {}
 
 @enduml
 ```
+
+![Good example](assets/plantuml/1.2.2-alias-for-an-entity.good.png)
 
 ### 1.3. Formatting
 
@@ -130,7 +136,7 @@ DeduplicationWorker -> Xero: \
 DeduplicationWorker -> Xero:\n1. invoice number\n 2.PO number
 ```
 
-![Bad example](assets/plantuml/1.2.1-line-breaks.bad.png)
+![Bad example](assets/plantuml/1.3.3-line-breaks.bad.png)
 
 
 ```text
@@ -141,7 +147,7 @@ DeduplicationWorker -> Xero: \n \
     3. total sum
 ```
 
-![Good example](assets/plantuml/1.2.1-line-breaks.good.png)
+![Good example](assets/plantuml/1.3.3-line-breaks.good.png)
 
 1.3.4. Opening and closing a diagram
 
@@ -149,8 +155,12 @@ a. There is an empty line after the opening tag and before the closing tag.
 
 b. There is no indentation of the content between both tags.
 
-There is no special reason for such approach, just a rule to keep consitancy.
-We also could choose the approach without empty line but with an indent.
+The reason to have an empty line before opening and closing tags
+is to split logical groups. It raises from our common script rules.
+
+The reason to avoid additional left indent and just add empty lines
+is to have more space in horizontal direction due to the limit
+of the line we specify in this standard.
 
 ```text
 // Bad
@@ -205,6 +215,8 @@ Endif
 @enduml
 ```
 
+![Bad example](assets/plantuml/2.1.1-activity-diagram-type.bad.png)
+
 ```text
 // Good
 @startuml
@@ -222,6 +234,8 @@ stop
 @enduml
 ```
 
+![Good example](assets/plantuml/2.1.1-activity-diagram-type.good.png)
+
 ## 3. Class diagram
 
 ### 3.1. Common
@@ -235,8 +249,8 @@ those classes should be imported using the `!include` directive.
 // Good
 @startuml
 
-!include index.puml
-!include ./../form/index.puml
+!include 3.1.2-import-classes.index.puml
+!include 3.1.2-import-classes.form.index.puml
 
 class SupplierForm {
     - {method} onSubmitted?: (values: AnyDictionary) => void
@@ -248,7 +262,9 @@ SupplierForm *-- "1" Form
 @enduml
 ```
 
-3.1.2. In the index file that should be imported into other diagrams, 
+![Good example](assets/plantuml/3.1.2-import-classes.png)
+
+3.1.3. In the index file that should be imported into other diagrams, 
 we should describe only public data.
 So when we will reuse this diagram in the other diagram we will see only public data.
 We do not need to know the private fields and methods.
@@ -267,8 +283,12 @@ class "SupplierForm" as SupplierForm {
 @enduml
 ```
 
+![Bad example](assets/plantuml/3.1.3-index-file.bad.png)
+
 ```text
 // Good
+
+// index.puml
 @startuml
 
 class "SupplierForm" as SupplierForm {
@@ -277,10 +297,10 @@ class "SupplierForm" as SupplierForm {
 
 @enduml
 
-// Other diagram
+// supplier-form.class.puml
 @startuml
 
-!include supplier-form.puml
+!include index.puml
 
 class SupplierForm {
     - {method} convertData(values: Supplier): ConvertedSupplier
@@ -288,6 +308,8 @@ class SupplierForm {
 
 @enduml
 ```
+
+![Good example](assets/plantuml/3.1.3-index-file.good.png)
 
 ### 3.2. Method
 
@@ -298,8 +320,8 @@ and return type.
 
 ```text
 // Bad
-class RossumAppService {
-    - {method} postpone(entityId, reason): Promise<void>
+class SupplierPage {
+    - {method} onSubmitted(value)
 }
 ```
 
