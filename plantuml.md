@@ -73,32 +73,6 @@ title UC. 06 Deduplication
 
 ![Example](assets/plantuml/1.2.1-the-diagram-title.png)
 
-1.2.2. Each diagram must define a name for a component using the `as` command.
-It brings usability of refactoring the name of a component
-without changing the name in all components where the diagram imported in.
-
-```text
-// Bad
-@startuml
-
-class SupplierForm {}
-
-@enduml
-```
-
-![Bad example](assets/plantuml/1.2.2-alias-for-an-entity.bad.png)
-
-```text
-// Good
-@startuml
-
-class "SupplierForm" as SupplierForm {}
-
-@enduml
-```
-
-![Good example](assets/plantuml/1.2.2-alias-for-an-entity.good.png)
-
 ### 1.3. Formatting
 
 1.3.1. All the rules for formatting scripts should be used automatically for
@@ -162,19 +136,21 @@ The reason to avoid an additional left indent and just add empty lines
 is to have more space in the horizontal direction due to the limit
 of the line, we specify in this standard.
 
-```text
+```puml
 // Bad
 @startuml
 DeduplicationWorker -> Xero: /invoice/:id
 @enduml
+```
 
+```puml
 // Bad
 @startuml
     DeduplicationWorker -> Xero: /invoice/:id
 @enduml
 ```
 
-```text
+```puml
 // Good
 @startuml
 
@@ -285,7 +261,7 @@ class "SupplierForm" as SupplierForm {
 
 ![Bad example](assets/plantuml/3.1.3-index-file.bad.png)
 
-```text
+```puml
 // Good
 
 // index.puml
@@ -359,7 +335,7 @@ type of the class:
 It could be done with the `activate <component>` command or using `++` in action flow.
 Example `Component -> Database ++: save data`.
 
-4.1.2. Using if/else statements are prohibited. 
+4.1.2. Using if/else statements are prohibited for described scenarios. 
 We must split all possible cases into several diagrams instead.
 Each diagram should cover a specific use case.
 
