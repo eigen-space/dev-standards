@@ -13,6 +13,7 @@
   * [Frontend architecture](architecture/frontend.md)
 * [Process](process.md)
 * [На русском](ru/README.md)
+  * [Тезаурус](ru/thesaurus.md)
   * [Общее](ru/common.md)
   * [Скрипты](ru/scripts.md)
   * [Архитектура](ru/architecture/README.md)
